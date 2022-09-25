@@ -64,9 +64,9 @@ public class CratesPlus extends JavaPlugin implements Listener {
             getLogger().warning("CratesPlus has not yet been officially tested with Bukkit " + bukkitVersion + " but should still work");
         }
 
-        if (LinfootUtil.versionCompare(bukkitVersion, "1.9") > -1) {
+        if (LinfootUtil.versionCompare(bukkitVersion, "1.9.2") > -1) {
             // Use 1.9+ Util
-            version_util = new Version_1_9(this);
+            version_util = new Version_1_9_2(this);
         } else if (LinfootUtil.versionCompare(bukkitVersion, "1.8") > -1) {
             // Use 1.8 Util
             version_util = new Version_1_8(this);
